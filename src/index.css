@@ -5,6 +5,7 @@
 
 html,
 body {
+  display: grid;
   height: 100%;
   margin: 0;
   background-image: linear-gradient(
@@ -83,15 +84,26 @@ h1 {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #282c34;
   position: absolute;
   top: 11%;
-  left: 10%;
-  width: 80%;
+  left: 3%;
+  width: 94%;
   height: 83%;
+  display: grid;
+  grid-template-areas: "timer info";
+  gap: 4%;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-areas:
+      "timer"
+      "info";
+  }
+}
+
+.card {
+  background-color: #282c34;
   border-radius: 30px;
-  box-shadow: 0 0 20px black;
+  box-shadow: 3px 5px 15px black;
 }

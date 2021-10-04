@@ -1,5 +1,5 @@
-import Login from "./Login.jsx";
-import Timer from "./Timer.jsx";
+import Login from "./componenets/Login.jsx";
+import Timer from "./componenets/Timer.jsx";
 
 const App = () => {
   return (
@@ -10,9 +10,10 @@ const App = () => {
         </div>
         <Login />
       </header>
-      <div className="container text">
-        <Timer />
-      </div>
+      <section className="container">
+        <div className="card text"></div>
+        <div className="card text"></div>
+      </section>
     </>
   );
 };
